@@ -1,5 +1,11 @@
 .header{
     display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    padding-top: 10px;
+    width: 100%;
+    z-index: 999;
+
 }
 
 .header__left{
@@ -8,7 +14,7 @@
 
 .header__left > img {
     object-fit: contain;
-    height: 55px;
+    height: 60px;
     margin-right: 10px;
 }
 
@@ -17,7 +23,7 @@
     display: flex;
     align-items: center;
     border-radius: 5px;
-    height: 15px;
+    height: 20px;
     color: gray;
     background-color: #eef3f8;
 
@@ -29,3 +35,7 @@
     background: none;
 }
 
+.header__right{
+    display: flex;
+
+}
