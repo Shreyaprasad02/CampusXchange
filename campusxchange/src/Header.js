@@ -11,19 +11,19 @@ function Header() {
     <div className = "header">
 
       <div className = "header__left">
-      <img src="/images/logo.png" alt="" />
+        <img src="/images/logo.png" alt="" />
+      </div>
 
-        <div className = "header__search" >
+      <div className = "header__center">
+          <HeaderOption Icon={HomeIcon} title='Home' />
+          <HeaderOption Icon={SupervisorAccountIcon} title='My Network'/>
+      </div>
+
+      <div className = "header__search" >
           <SearchIcon />
           <input type="text" placeholder="search" />
-        </div>
       </div>
 
-      <div className = "header__right">
-        <HeaderOption Icon={HomeIcon} title='Home' />
-        <HeaderOption Icon={SupervisorAccountIcon} title='My Network'/>
-
-      </div>
     </div>
   );
 }

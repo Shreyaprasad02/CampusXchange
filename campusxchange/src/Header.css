@@ -1,36 +1,42 @@
 .header{
+    height: 50px;
+    width: 100%;
+    background-color: #0b2239;
     display: flex;
-    justify-content: space-evenly;
-    border-bottom: 0.1px solid lightgray;
     padding-top: 5px;
     padding-bottom: 3px;
-    width: 100%;
     z-index: 999;
-    background-color: #0b2239;
-    height: 50px;
     position: sticky;
     top: 0;
 }
 
 .header__left{
-    display: flex;
+    flex: 3;
 }
 
 .header__left > img {
     object-fit: contain;
     height: 60px;
+    margin-left: 70px;
     margin-right: 10px;
+}
+
+.header__center{
+    flex: 5;
+    display: flex;
 }
 
 .header__search{
     padding: 10px;
+    flex: 2;
     display: flex;
     align-items: center;
+    height: 25px;
     border-radius: 5px;
-    height: 20px;
     color: gray;
     background-color: #eef3f8;
-
+    border-radius: 30px;
+    margin-right: 20px;
 }
 
 .header__search > input{
@@ -39,6 +45,4 @@
     background: none;
 }
 
-.header__right{
-    display: flex;
-}
+
