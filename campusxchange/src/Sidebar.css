@@ -89,6 +89,7 @@
   align-items: center;
   margin-bottom: 20px;
   color:#0b2239;
+  cursor: pointer;
 }
 
 .sidebarIcon{
