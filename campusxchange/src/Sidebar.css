@@ -35,6 +35,7 @@
 .sidebar__top>h4 {
   color: gray;
   font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .sidebar__top>h2 {
@@ -52,6 +53,7 @@
 
 .sidebar__stat {
   margin-top: 10px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
 }
