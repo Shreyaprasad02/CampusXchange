@@ -30,7 +30,6 @@ function Header() {
           <SearchIcon />
           <input type="text" placeholder="Search" />
       </div>
-
     </div>
   );
 }
