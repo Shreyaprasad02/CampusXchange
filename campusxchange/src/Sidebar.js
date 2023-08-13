@@ -1,6 +1,12 @@
 import React from 'react';
 import './Sidebar.css';
 import { Avatar } from '@material-ui/core';
+import {Group} from '@material-ui/icons';
+import {Event} from '@material-ui/icons';
+import {School} from '@material-ui/icons';
+import {Description} from '@material-ui/icons';
+import {Settings} from '@material-ui/icons';
+
 
 function Sidebar() {
   return (
@@ -25,28 +31,30 @@ function Sidebar() {
       </div>
 
       <div className='sidebar__bottom'>
+        <div className='sidebar__wrapper'>
+           <ul className='sidebar__list'>
+            <li className='sidebarListItem'>
+              <Group className='sidebarIcon'/>
+              <span className='sidebarListItemText'>Groups</span>
+            </li>
+            <li className='sidebarListItem'>
+              <Event className='sidebarIcon'/>
+              <span className='sidebarListItemText'>Events</span>
+            </li>
+            <li className='sidebarListItem'>
+              <School className='sidebarIcon'/>
+              <span className='sidebarListItemText'>Interview Experience</span>
+            </li>
+            <li className='sidebarListItem'>
+              <Description className='sidebarIcon'/>
+              <span className='sidebarListItemText'>Blogs</span>
+            </li>
+            <li className='sidebarListItem'>
+              <Settings className='sidebarIcon'/>
+              <span className='sidebarListItemText'>Settings</span>
+            </li>
 
-        
-
-        <div className='item'>
-          <img src='' alt='' />
-          <span>Groups</span>
-        </div>
-        <div className='item'>
-          <img src='' alt='' />
-          <span>Events</span>
-        </div>
-        <div className='item'>
-          <img src='' alt='' />
-          <span>Interview Experience</span>
-        </div>
-        <div className='item'>
-          <img src='' alt='' />
-          <span>Blogs</span>
-        </div>
-        <div className='item'>
-          <img src='' alt='' />
-          <span>Settings</span>
+           </ul>
         </div>
       </div>
     </div>
