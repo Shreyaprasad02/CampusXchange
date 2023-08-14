@@ -1,14 +1,16 @@
 .feed{
-    flex: 0.6;
-    margin: 0 20px;
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    margin: 0px 30px;
 }
 
 .feed__inputContainer{
     background-color: white;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .feed__input{
@@ -35,5 +37,26 @@
 
 .feed__input > form > button{
     display: none;
-    
+}
+
+.feed__Options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.feed__Options .option{
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.feed__Options .option:hover{
+    background-color: #eee;
 }
