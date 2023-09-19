@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import Sidebar from './Sidebar';
 import Feed from './Feed';
+import Sidebar from './Sidebar';
+import Followerscard from './Followerscard';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className='app__body'>
         <Sidebar />
         <Feed />
+        <Followerscard />
       </div>
     </div>
   );
