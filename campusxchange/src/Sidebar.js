@@ -1,63 +1,40 @@
 import React from 'react';
+import Cover from "../src/img/cover.jpg";
+import Profile from "../src/img/profileImg.jpg";
 import './Sidebar.css';
-import { Avatar } from '@material-ui/core';
-import {Group} from '@material-ui/icons';
-import {Event} from '@material-ui/icons';
-import {School} from '@material-ui/icons';
-import {Description} from '@material-ui/icons';
-import {Settings} from '@material-ui/icons';
 
-
-function Sidebar() {
+const Sidebar = () => {
   return (
-    <div className='sidebar'>
-      <div className='sidebar__top'>
-        <img src="https://th.bing.com/th/id/OIP.6OqHsNye6JXKysG6JnDieAHaCP?w=348&h=106&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" />
-        <Avatar className='sidebar__avatar' />
-        <h2>Shreya Prasad</h2>
-        <h4>shreyaprasadaug@gmail.com
-        </h4>
+    <div className="Sidebar">
+      <div className="ProfileImages">
+        <img src={Cover} alt="" />
+        <img src={Profile} alt="" />
       </div>
 
-      <div className='sidebar__stats'>
-        <div className='sidebar__stat'>
-          <p>Who viewed you</p>
-          <p className='sidebar__statnumber'>2,543</p>
-        </div>
-        <div className='sidebar__stat'>
-          <p>views on post</p>
-          <p className='sidebar__statnumber'>2,448</p>
-        </div>
+      <div className="ProfileName">
+        <span>Zendaya MJ</span>
+        <span>Senior UI/UX Designer</span>
       </div>
 
-      <div className='sidebar__bottom'>
-        <div className='sidebar__wrapper'>
-           <ul className='sidebar__list'>
-            <li className='sidebarListItem'>
-              <Group className='sidebarIcon'/>
-              <span className='sidebarListItemText'>Groups</span>
-            </li>
-            <li className='sidebarListItem'>
-              <Event className='sidebarIcon'/>
-              <span className='sidebarListItemText'>Events</span>
-            </li>
-            <li className='sidebarListItem'>
-              <School className='sidebarIcon'/>
-              <span className='sidebarListItemText'>Interview Experience</span>
-            </li>
-            <li className='sidebarListItem'>
-              <Description className='sidebarIcon'/>
-              <span className='sidebarListItemText'>Blogs</span>
-            </li>
-            <li className='sidebarListItem'>
-              <Settings className='sidebarIcon'/>
-              <span className='sidebarListItemText'>Settings</span>
-            </li>
-
-           </ul>
+      <div className="followStatus">
+        <hr />
+        <div>
+          <div className="follow">
+            <span>6,890</span>
+            <span>Followings</span>
+          </div>
+          <div className="vl"></div>
+          <div className="follow">
+            <span>1</span>
+            <span>Followers</span>
+          </div>
         </div>
-      </div>
-    </div>
+        <hr />
+      </div> 
+      <span>
+        My Profile
+      </span>   
+    </div>  
   )
 }
 

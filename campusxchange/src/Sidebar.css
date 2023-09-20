@@ -1,101 +1,95 @@
-.sidebar {
-  position: sticky;
-  top: 80px;
-  flex: 0.2;
+.Sidebar {
   border-radius: 10px;
-  text-align: center;
-  height: fit-content;
+  display: flex;
+  flex: 0.23;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+  height: 400px;
+  overflow-x: clip;
+  background: var(--cardColor);
 }
 
-.sidebar__avatar {
-  margin-bottom: 10px;
-}
-
-.sidebar__top {
+.ProfileImages {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid lightgray;
-  border-bottom: 0;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding-bottom: 10px;
-  background-color: white;
+  justify-content: center;
 }
 
-.sidebar__top>img {
-  margin-bottom: -20px;
-  height: 70px;
+.ProfileImages>img:nth-of-type(1) {
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  object-fit: cover;
 }
 
-.sidebar__top>h4 {
-  color: gray;
-  font-size: 12px;
-  margin-bottom: 10px;
+.ProfileImages>img:nth-of-type(2) {
+  width: 6rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3rem;
+  box-shadow: var(--profileShadow);
 }
 
-.sidebar__top>h2 {
-  font-size: 18px;
-}
-
-.sidebar__stats {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid lightgray;
-  background-color: #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.sidebar__stat {
-  margin-top: 10px;
-  margin-bottom: 15px;
+.ProfileName {
   display: flex;
-  justify-content: space-between;
-}
-
-.sidebar__stat>p {
-  color: gray;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.sidebar__statnumber {
-  font-weight: bold;
-  color: #0a66c2 !important;
-}
-
-.sidebar__bottom {
-  text-align: left;
-  padding: 25px;
-  border: 1px solid lightgray;
-  background-color: #fff;
-  border-radius: 10px;
-  margin-top: 10px;
-}
-
-.sidebar__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.sidebarListItem{
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  color:#0b2239;
+  margin-top: 3rem;
+  gap: 10px;
+}
+
+.ProfileName>span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+/* Follow Status */
+.followStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.followStatus>hr {
+  width: 85%;
+  border: 1px solid var(--hrColor);
+}
+
+.followStatus>div {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow>span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.follow>span:nth-of-type(2) {
+  color: var(--gray);
+  font-size: 13px;
+}
+
+.vl {
+  height: 120%;
+  border-left: 2px solid var(--hrColor);
+}
+
+.Sidebar>span{
+  font-weight: bold;
+  color: #3EE577;
+  align-self: center;
+  margin-bottom: 1rem;
   cursor: pointer;
-}
-
-.sidebarIcon{
-  margin-right: 15px;
-}
-
-.sidebarListItemText{
-  font-weight: 600;
 }
