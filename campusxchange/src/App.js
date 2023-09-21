@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import Header from './Header';
-import Feed from './Feed';
-import Sidebar from './Sidebar';
-import Followerscard from './Followerscard';
+import Header from './components/Header/Header';
+import Sidebar from './components/SideBar/Sidebar';
+import Feed from './components/Feed/Feed';
+import Followerscard from './components/FollowersCard/Followerscard';
+
 
 function App() {
   return (
