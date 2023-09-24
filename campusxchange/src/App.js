@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Sidebar from './components/SideBar/Sidebar';
 import Feed from './components/Feed/Feed';
 import Followerscard from './components/FollowersCard/Followerscard';
+// import Profile from './Pages/Profile/Profile';
 
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
       <Header />
       {/* App Body */}
       <div className='app__body'>
-        <Sidebar />
+        <Sidebar /> 
         <Feed />
-        <Followerscard />
+        <Followerscard /> 
+        {/* <Profile /> */}
       </div>
     </div>
   );
