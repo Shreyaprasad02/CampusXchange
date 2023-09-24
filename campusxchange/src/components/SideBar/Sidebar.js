@@ -4,6 +4,7 @@ import Profile from "../../img/profileImg.jpg";
 import './Sidebar.css';
 
 const Sidebar = () => {
+  const ProfilePage = true;
   return (
     <div className="Sidebar">
       <div className="ProfileImages">
@@ -28,14 +29,23 @@ const Sidebar = () => {
             <span>1</span>
             <span>Followers</span>
           </div>
+
+
+          {!ProfilePage && (
+            <>
+              <div className="vl"></div>
+              <div className="follow">
+                <span>3</span>
+                <span>Posts</span>
+              </div>
+            </>
+          )}
         </div>
         <hr />
-      </div> 
-      <span>
-        My Profile
-      </span>   
-    </div>  
-  )
-}
+      </div>
+      {Profile ? "" : <span>My Profile</span>}
+    </div>
+  );
+};
 
-export default Sidebar
+export default Sidebar;

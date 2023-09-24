@@ -7,7 +7,7 @@
   gap: 1rem;
   height: 400px;
   overflow-x: clip;
-  background: var(--cardColor);
+  background: white;
 }
 
 .ProfileImages {
