@@ -43,7 +43,7 @@ const Sidebar = () => {
         </div>
         <hr />
       </div>
-      {Profile ? "" : <span>My Profile</span>}
+      {Profile ? <span>My Profile</span> : ""}
     </div>
   );
 };
