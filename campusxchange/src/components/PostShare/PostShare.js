@@ -59,7 +59,6 @@ function PostShare() {
                         <CloseIcon onClick={() => setImage(null)} />
                         <img src={image.image} alt="" />
                     </div>
-
                 )}
             </div>
         </div>
