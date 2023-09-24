@@ -5,7 +5,7 @@ import { Followers } from '../../Data/Followersdata'
 function Followerscard() {
   return (
     <div className="FollowersCard">
-        <h3>Suggestions</h3>
+        <h3>Suggestions for you</h3>
 
         {Followers.map((follower, id)=>{
             return(
@@ -19,7 +19,7 @@ function Followerscard() {
                     </div>
                     <button className='button fc-button'>
                         Follow
-                    </button>
+                    </button>   
                 </div>
             )
         })}
