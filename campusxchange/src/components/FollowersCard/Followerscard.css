@@ -5,6 +5,9 @@
     flex: 0.3;
     flex-direction: column;
     font-size: 13px;
+    background: white;
+    padding: 20px 20px 0 20px;
+    height: 20rem;
 }
 
 .follower{
