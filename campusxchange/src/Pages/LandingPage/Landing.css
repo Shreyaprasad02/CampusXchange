@@ -1,0 +1,71 @@
+.Landing{
+    height: 70vh;
+}
+
+.heading {
+    color: #3EE577;
+    font-size: 30px;
+}
+
+ .navbar{
+   display: flex;
+   justify-content: space-between;
+ }
+
+ul{
+   list-style: none;
+   display: flex;
+   gap: 20px;
+   padding :10px;
+   cursor: pointer; 
+}
+li{
+ text-decoration: none;
+}
+
+a{
+ text-decoration: none;
+}
+ul li:hover{
+ color: #3EE577;
+}
+hr{
+   border: 1px solid rgb(239, 233, 233) ;
+   margin-bottom: 60px;
+}
+.voilet{
+   color: #3EE577;
+}
+img{
+ width: 500px;
+ height: 520px;
+ margin-right: 90px;
+}
+
+.main-content{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.left-content{
+ align-items: center;
+ margin-left: 50px;
+ padding: 10%;
+ text-align: center;
+
+}
+.left-content p{
+ color:#6A6A6A;
+ font-weight: 500;
+ font-size: 20px;
+}
+
+.right-nav{
+    height: 35px;
+    width: 15rem;
+    margin-bottom:20px;
+}
+
+
+ 
+ 
