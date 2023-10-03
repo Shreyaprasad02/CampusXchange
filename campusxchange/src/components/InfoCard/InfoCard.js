@@ -28,6 +28,12 @@ const InfoCard = () => {
 
       <div className="info">
         <span>
+          <b>Branch </b>
+        </span>
+        <span>Information Technology</span>
+      </div>
+      <div className="info">
+        <span>
           <b>Batch </b>
         </span>
         <span>2024</span>
