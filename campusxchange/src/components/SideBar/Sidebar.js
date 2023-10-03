@@ -31,7 +31,7 @@ const Sidebar = () => {
           </div>
 
 
-          {!ProfilePage && (
+          {ProfilePage && (
             <>
               <div className="vl"></div>
               <div className="follow">
@@ -43,7 +43,7 @@ const Sidebar = () => {
         </div>
         <hr />
       </div>
-      {Profile ? <span>My Profile</span> : ""}
+      {ProfilePage ? "" : <span>My Profile</span> }
     </div>
   );
 };
